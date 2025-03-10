@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Card</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f4f4f4;
+        }
+
+        .card {
+            background: #fff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 300px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .profile-pic {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 3px solid #007BFF;
+        }
+
+        .name {
+            font-size: 1.5em;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        .designation {
+            color: #555;
+            font-size: 1em;
+            margin: 5px 0;
+        }
+
+        .bio {
+            font-size: 0.9em;
+            color: #666;
+            margin: 10px 0;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin: 0 5px;
+            color: #007BFF;
+            font-size: 1.2em;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <img src="https://plus.unsplash.com/premium_photo-1689568126014-06fea9d5d341?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D" alt="Profile Picture" class="profile-pic">
+        <div class="name">vamsikrishna kandula</div>
+        <div class="designation">Web Developer</div>
+        <div class="bio">Passionate about coding and designing interactive websites.</div>
+        <div class="social-icons">
+            <a href="#">&#x1F517;</a>
+            <a href="#">&#x1F426;</a>
+            <a href="#">&#x1F4F1;</a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+
+package com.cludvandana;
+
+import java.util.Arrays;
+
+public class AnagramCheck {
+
+	public static void main(String[] args) {
+		String s = "vamsi";
+		String s1 = "iwesmav";
+		System.out.println(checking(s, s1));
+
+	}
+
+	public static boolean checking(String s, String s1) {
+		char[] charArray = s.toCharArray();
+		char[] charArray2 = s1.toCharArray();
+		if (s.length() != s1.length())
+			return false;
+
+		Arrays.sort(charArray);
+		Arrays.sort(charArray2);
+		for (int i = 0; i < charArray.length; i++)
+			if (charArray[i] != charArray2[i])
+				return false;
+
+		return true;
+
+	}
+
+}
